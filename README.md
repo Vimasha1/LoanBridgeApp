@@ -55,8 +55,7 @@ Loan Bridge App is a productivity-focused mobile application designed to **strea
 
 3.Build and run the app on an emulator or connected Android device.
 
-
-About the Project
+## **About the Project**
 
 This app was developed as part of the Mobile Application Development module at SLIIT. It showcases skills in Android development, state management, and user-friendly interface design.
 
