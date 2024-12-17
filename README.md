@@ -30,9 +30,13 @@ View upcoming tasks directly from your device's home screen to boost productivit
 Technologies Used
 
 1.Android Studio
+
 2.Java/Kotlin
+
 3.SharedPreferences
+
 4.Intents (Explicit and Implicit)
+
 5.Notifications API
 
 About the Project
