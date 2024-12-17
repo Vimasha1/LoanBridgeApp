@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Grey"
+    android:textAlignment="center"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/gotUser"
+        android:layout_width="382dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="@color/My_Red"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <FrameLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="401dp"
+        android:layout_height="621dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotUser">
+
+        <ImageView
+            android:id="@+id/homeLoan"
+            android:layout_width="189dp"
+            android:layout_height="208dp"
+            app:srcCompat="@drawable/firefly_cartoon_image_of_a_home_loan_use_red_and_grey_88505__1_" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="230dp"
+            android:text="@string/HomeLoan"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/eduLoan"
+            android:layout_width="wrap_content"
+            android:layout_height="207dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="@dimen/margin_5"
+            app:srcCompat="@drawable/firefly_cartoon_image_of_a_educational_loan_use_red_and_grey_16810" />
+
+        <ImageView
+            android:id="@+id/autoLoan"
+            android:layout_width="189dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="300dp"
+            app:srcCompat="@drawable/firefly_cartoon_image_of_a_car_and_a_background_use_red_and_grey__make_the_image_more_longer_88505__2_" />
+
+        <ImageView
+            android:id="@+id/personalLoan"
+            android:layout_width="186dp"
+            android:layout_height="207dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="300dp"
+            app:srcCompat="@drawable/firefly_cartoon_of_a_friendly_man_with_money_and_a_background__use_red_and_grey_colours_30660" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="540dp"
+            android:text="@string/AutoLoan"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="540dp"
+            android:text="@string/PersonalLoan"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="230dp"
+            android:text="@string/EducationalLoan"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="438dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/Light_Grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/nameofApp"
+            android:layout_width="181dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/nameofApp"
+            android:textAlignment="textStart"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/rounded_in_photoretrica__1_" />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="449dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/material_dynamic_neutral_variant70" />
+
+        <ImageView
+            android:id="@+id/icnHome"
+            android:layout_width="86dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/trackIcon"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/track" />
+
+        <ImageView
+            android:id="@+id/applyIcon"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/apply" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="84dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/user" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Grey"
+    android:textAlignment="center"
+    tools:context=".Welcome">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="438dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/Light_Grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/nameofApp"
+            android:layout_width="181dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/nameofApp"
+            android:textAlignment="textStart"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/rounded_in_photoretrica__1_" />
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="442dp"
+        android:layout_height="828dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="424dp"
+            android:layout_height="102dp"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_10"
+            android:text="@string/Welcome_Description"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <EditText
+            android:id="@+id/takeName"
+            android:layout_width="313dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="148dp"
+            android:ems="10"
+            android:hint="@string/Enter"
+            android:inputType="text"
+            android:padding="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/My_Red"
+            android:textColorHint="@color/My_Red"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="451dp"
+            android:layout_height="487dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/firefly_cartoon_image_of_a_happy_friendly_person_who_crosses_a_bridge_made_of_money__use_red_and_gre" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

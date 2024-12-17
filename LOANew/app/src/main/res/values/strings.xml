@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">LoanBridge</string>
+    <string name="Icon_Description">\"Bridging Your Financial Needs\"</string>
+    <string name="Onboarding_Screen_1">\"Apply for loans effortlessly with our simple interface.
+        <font color='#FF0000'>Fast</font> and <font color='#FF0000'>Easy</font>, right at your fingertips.\"</string>
+    <string name="Onboarding_Screen_2">\"Securely<font color='#FF0000'> upload</font> your
+        <font color='#FF0000'>collateral</font> <font color='#FF0000'>documents</font>
+        for a faster loan approval process.\"</string>
+    <string name="Onboarding_Screen_3">\"<font color='#FF0000'>\Keep Track </font>
+        of your loan and repayment schedule easily.Stay <font color='#FF0000'>organized</font>and in control.\"</string>
+    <string name="Start">Get Started!</string>
+    <string name="nameofApp"><font color='#FF0000'>L</font>oan <font color='#FF0000'>B</font>ridge</string>
+    <string name="Upcoming"><font color='#FF0000'>U</font>pcoming <font color='#FF0000'>T</font>asks</string>
+    <string name="Welcome_Description">Hi there! Let’s get you started with Loan Bridge.</string>
+    <string name="Enter">Enter Your Name</string>
+    <string name="Start2">Start you Journey!</string>
+    <string name="HomeLoan">Home Loan</string>
+    <string name="EducationalLoan">Educational Loan</string>
+    <string name="PersonalLoan">Personal Loan</string>
+    <string name="AutoLoan">Auto Loan</string>
+    <string name="ApplyNow"><font color='#FF0000'>A</font>pply <font color='#FF0000'>N</font>ow</string>
+    <string name="TaskInfo"><font color='#FF0000'>T</font>ask <font color='#FF0000'>I</font>nfo</string>
+    <string name="LoanType">Loan Type</string>
+    <string name="LoanReason">Loan Reason</string>
+    <string name="FullName">Full Name</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="Email">Email</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="NIC">NIC</string>
+    <string name="LoanAmount">Loan Amount</string>
+    <string name="Tenure">Tenure(Years)</string>
+    <string name="PostalAddress">Postal Address</string>
+    <string name="PostalCode">Postal Code</string>
+    <string name="Submit">Upload Collateral</string>
+    <string name="TaskName">Task Name:</string>
+    <string name="TaskDescription">Task Description:</string>
+    <string name="TaskDueDate">Due Date:</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="Save">Save</string>
+    <string name="Upload"><font color='#FF0000'>U</font>pload</string>
+    <string name="UploadDet">To complete your loan application, please upload the required collateral documents within <font color='#FF0000'>1 minute</font>
+        Ensure the documents are clear and legible.</string>
+    <string name="UseCam">To upload your collateral, please tap \'Camera Icon\'
+        to open your camera and take a picture.</string>
+    <string name="SaveChanges">Save Changes</string>
+    <string name="Submit2">Submit</string>
+    <string name="ThankYou">\“Thank you for choosing Loan Bridge. Our team is currently reviewing your application.
+        You will be notified once the review is complete.\”</string>
+    <string name="KeepTrack"><font color='#FF0000'>K</font>eep <font color='#FF0000'>T</font>rack</string>
+    <string name="MyProfile"><font color='#FF0000'>M</font>y <font color='#FF0000'>P</font>rofile</string>
+    <string name="AddTask"><font color='#FF0000'>A</font>dd <font color='#FF0000'>T</font>ask</string>
+    <string name="Repayment">Repayment Schedule</string>
+    <string name="CustomerSupport">Customer Support</string>
+    <string name="Outstanding">Outstanding Balance</string>
+    <string name="Balance">Rs.465,000.00</string>
+    <string name="CreateProfile">Create New Profile</string>
+    <string name="SeeTasks">See Tasks</string>
+
+    <string name="Upload_photo">Feel free to upload your profile picture below to finish setting up your profile.</string>
+    <string name="NewProfile"><font color='#FF0000'>N</font>ew <font color='#FF0000'>P</font>rofile</string>
+    <string name="Rate">How’s your experience so far? Rate us to help improve \t\n
+        <font color='#FF0000'>L</font>oan <font color='#FF0000'>B</font>ridge!</string>
+    <string name="TaskList"><font color='#FF0000'>M</font>y <font color='#FF0000'>T</font>asks</string>
+    <string name="TaskNameHint">Enter task name</string>
+    <string name="TaskDueDateHint">Enter due date</string>
+    <string name="TaskDescriptionHint">Enter task description</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>

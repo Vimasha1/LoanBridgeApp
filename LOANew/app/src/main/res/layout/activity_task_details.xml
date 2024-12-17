@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Grey"
+    android:textAlignment="center"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/Edit"
+        android:layout_width="169dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/Edit"
+        android:textColor="@color/Dark_Grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="169dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/Delete"
+        android:textColor="@color/Dark_Grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="438dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/Light_Grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/nameofApp"
+            android:layout_width="181dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/TaskInfo"
+            android:textAlignment="textStart"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/rounded_in_photoretrica__1_" />
+
+    </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout2"
+        android:layout_width="449dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/material_dynamic_neutral_variant70" />
+
+        <ImageView
+            android:id="@+id/icnHome"
+            android:layout_width="86dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/trackIcon"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/track" />
+
+        <ImageView
+            android:id="@+id/applyIcon"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/apply" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="84dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/user" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="311dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/TaskName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvDescript"
+        android:layout_width="292dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/TaskDescription"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvDueDate"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/TaskDueDate"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescript" />
+
+    <TextView
+        android:id="@+id/tvNamedes"
+        android:layout_width="111dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/TaskName"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/tvTaskdes"
+        android:layout_width="154dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/TaskDescription"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvDatedes"
+        android:layout_width="106dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/TaskDueDate"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescript" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:background="@color/Light_Grey"
+    android:textAlignment="center"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="438dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/Light_Grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/nameofApp"
+            android:layout_width="181dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/AddTask"
+            android:textAlignment="textStart"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/rounded_in_photoretrica__1_" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="169dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/Save"
+        android:textColor="@color/Dark_Grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout2"
+        android:layout_width="449dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/material_dynamic_neutral_variant70" />
+
+        <ImageView
+            android:id="@+id/icnHome"
+            android:layout_width="86dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/trackIcon"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/track" />
+
+        <ImageView
+            android:id="@+id/applyIcon"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/apply" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="84dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/user" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="310dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="96dp"
+        android:hint="@string/TaskNameHint"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/editDueDate"
+        android:layout_width="299dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="28dp"
+        android:inputType="date"
+        android:hint="@string/TaskDueDateHint"
+        app:layout_constraintBottom_toTopOf="@+id/Save"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="306dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="344dp"
+        android:hint="@string/TaskDescriptionHint"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

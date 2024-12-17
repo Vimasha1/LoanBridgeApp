@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_Grey"
+    android:textAlignment="center"
+    tools:context=".TrackPage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="438dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/Light_Grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/nameofApp"
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/KeepTrack"
+            android:textAlignment="textStart"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="101dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/track" />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="449dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/material_dynamic_neutral_variant70"
+            app:layout_anchor="@+id/bottomAppBar"
+            app:layout_anchorGravity="center" />
+
+        <ImageView
+            android:id="@+id/icnHome"
+            android:layout_width="86dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/trackIcon"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/track" />
+
+        <ImageView
+            android:id="@+id/applyIcon"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/apply" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="84dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/user" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="448dp"
+        android:layout_height="780dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="458dp"
+            android:layout_height="665dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/My_lightBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/Seetasks"
+                android:layout_width="169dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="72dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/SeeTasks"
+                android:textColor="@color/Dark_Grey"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                style="@android:style/Widget.Material.CalendarView"
+                android:layout_width="323dp"
+                android:layout_height="309dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="28dp"
+                android:focusedMonthDateColor="@color/My_Red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="258dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="44dp"
+                android:text="@string/Outstanding"
+                android:textColor="@color/My_Red"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Seetasks" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="163dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="56dp"
+                android:text="@string/Balance"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/dial"
+            android:layout_width="74dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/support" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/CustomerSupport"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/dial"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
