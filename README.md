@@ -28,13 +28,15 @@ Alerts for upcoming tasks and timer completions with sound and vibration for vis
 View upcoming tasks directly from your device's home screen to boost productivity.
 
 Technologies Used
-Android Studio
-Java/Kotlin
-SharedPreferences
-Intents (Explicit and Implicit)
-Notifications API
+
+1.Android Studio
+2.Java/Kotlin
+3.SharedPreferences
+4.Intents (Explicit and Implicit)
+5.Notifications API
 
 About the Project
+
 This app was developed as part of the Mobile Application Development module at SLIIT. It showcases skills in Android development, state management, and user-friendly interface design.
 
 
