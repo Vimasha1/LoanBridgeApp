@@ -39,6 +39,13 @@ Technologies Used
 
 5.Notifications API
 
+How to Run the App
+1.Clone the repository:
+
+2.Open the project in Android Studio.
+3.Build and run the app on an emulator or connected Android device.
+
+
 About the Project
 
 This app was developed as part of the Mobile Application Development module at SLIIT. It showcases skills in Android development, state management, and user-friendly interface design.
