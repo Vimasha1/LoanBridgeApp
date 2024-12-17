@@ -1,4 +1,8 @@
 # LoanBridgeApp
+
+© 2024 [FERNANDO W.S.V.]. All Rights Reserved.  
+This project is for demonstration purposes only. Unauthorized use, copying, or distribution is prohibited.  
+
 Overview
 Loan Bridge App is a productivity-focused mobile application designed to streamline the loan application process. It allows users to manage loan-related tasks, upload required collateral documents securely, and receive timely reminders to stay organized throughout the application journey.
 
